@@ -10,25 +10,34 @@
 </head>
 
 <body class="flex-column min-100-vh">
-    <header>
+  <header>
         <h1>Weather Dashboard</h1>
-    </header>
+  </header>
 
-    <div class="col-12 col-md-4">
+  <main class="flex-row justify-space-between">
 
-      <div class="card">
-        <h3 class="card-header text-uppercase">Search By City</h3>
-        <form id="city-search" class="card-body">
-          <label class="search-label" for="current-weather">City and State</label>
-          <input name="current-weather" id="current-weather" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Find Weather</button>
-        </form>
+      <div class="col-12 col-md-4">
+
+        <div class="card row-3">
+          <h3 class="card-header text-uppercase">Search By City</h3>
+          <form id="city-search" class="card-body">
+            <label class="search-label" for="current-weather">City Name</label>
+            <input name="current-weather" id="current-weather" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Find Weather</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 class="card-header text-uppercase">Previous Searchers</h3>
+          <div id="language-buttons" class="card-body"></div>
+        </div>
       </div>
 
-      <div class="col-12 col-md-8">
-        <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
-        <div id="repos-container" class="list-group"></div>
-      </div>
-    </main>
+        <div class="col-12 col-md-8 9">
+         <h2 class="subtitle">Current Weather: <span id="weather-results"></span></h2>
+          <div id="weather-container" ></div>
+        </div>
+   </main>
+</body>
 
   
