@@ -20,20 +20,20 @@
 
         <div class="card row-3">
           <h3 class="card-header text-uppercase">Search By City</h3>
-          <form id="city-search" class="card-body">
-            <label class="search-label" for="current-weather">City Name</label>
-            <input name="current-weather" id="current-weather" type="text" autofocus="true" class="form-input" />
+          <form id="user-form" class="card-body">
+            <label class="search-label" for="city-search">City Name</label>
+            <input name="city-search" id="city-search" type="text" autofocus="true" class="form-input" />
             <button type="submit" class="btn">Find Weather</button>
           </form>
         </div>
 
-        <div class="card">
+        <div class="card ">
           <h3 class="card-header text-uppercase">Previous Searchers</h3>
           <div id="language-buttons" class="card-body"></div>
         </div>
       </div>
 
-        <div class="col-12 col-md-8 9">
+        <div class="col-12 col-md-8 display">
          <h2 class="subtitle">Current Weather: <span id="weather-results"></span></h2>
           <div id="weather-container" ></div>
         </div>

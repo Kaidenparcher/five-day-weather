@@ -60,3 +60,18 @@ header{
     
     
   }
+
+.display {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
