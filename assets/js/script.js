@@ -51,7 +51,8 @@ var formSubmitHandler = function (event) {
         if (response.ok) {
           response.json().then(function (data) {
             console.log(data)
-            variableTemp = data[list][]
+            variableTemp = data[0].temp
+            console.log(variableTemp)
             displayWeather(data, );
           });
         } else {
